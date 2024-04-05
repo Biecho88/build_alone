@@ -10,7 +10,9 @@ body {
     font-family: 'Lato';
 }
 
-/* from Bulma */
+.bg-body-tertiary{  
+    background-color: white !important;
+}
 .icon {
     align-items: center;
     display: inline-flex;
