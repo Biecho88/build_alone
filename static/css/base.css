@@ -13,6 +13,13 @@ body {
 .bg-body-tertiary{  
     background-color: white !important;
 }
+
+.about_us {
+    height: 40vh;
+    background-color: white !important;
+    display: inline-flex;
+}
+
 .icon {
     align-items: center;
     display: inline-flex;
@@ -64,6 +71,10 @@ body {
 @media (min-width: 1200px) {
   .container {
     max-width: 80%;
+  }
+
+  .container-fluid{
+    max-width: 100%;
   }
 }
 
