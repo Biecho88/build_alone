@@ -10,11 +10,37 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                {{ excavator }}
+
+<div class="overlay"></div>
+<div class="container-fluid">
+    {% for excavator in excavator %}
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+            <div class="image-container my-5">
+                {% if excavator.image %}
+                    <a href="{{ excavator.image.url }}" target="_blank">
+                        <img class="card-img-top img-fluid" src="{{ excavator.image.url }}" alt="{{ excavator.name }}">
+                    </a>
+                    {% else %}
+                    <a href="">
+                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ excavator.name }}">
+                    </a>
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="product-details-container mb-5 mt-md-5">
+                <p class="mb-0">{{ excavator.name }}</p>
+                <p class="lead mb-0 text-left font-weight-bold">${{ excavator.price }}</p>
+                {% if excavator.rating %}
+                    <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ excavator.rating }} / 5</small>
+                {% else %}
+                    <small class="text-muted">No Rating</small>
+                {% endif %}
+                <p class="mt-3">{{ excavator.description }}</p>
             </div>
         </div>
     </div>
+    {% endfor %}
+</div>
 {% endblock %}
