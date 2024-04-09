@@ -16,10 +16,11 @@ body {
 }
 
 .about_us {
-    height: 40vh;
+    height: 30vh;
     background-color: white !important;
     position: relative;
     padding-top: 20px;
+    margin-bottom: 20vh;
 }
 
 .icon {
@@ -71,6 +72,16 @@ body {
     background: #000 !important;
 }
 
+/* -------------------------------- Overlay to allow to cover Body picture for user to be able to see content properly on .................. */
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
