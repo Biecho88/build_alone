@@ -8,6 +8,7 @@ def excavator(request):
 
     excavator = Excavator.objects.all()
 
+
     context = {
         'excavator': excavator,
     }

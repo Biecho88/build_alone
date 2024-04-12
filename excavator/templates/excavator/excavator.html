@@ -31,6 +31,8 @@
         <div class="col-12 col-md-6 col-lg-4">
             <div class="product-details-container mb-5 mt-md-5">
                 <p class="mb-0"><strong>{{ excavator.name }}</strong></p>
+                <p class="mb-0"><strong>{{ excavator.model }}</strong></p>
+                <p class="mb-0"><strong>Weight: {{ excavator.weight }} kg</strong></p>
                 <p class="lead mb-0 text-left font-weight-bold">£{{ excavator.price }} per day</p>
                 {% if excavator.rating %}
                     <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ excavator.rating }} / 5</small>
