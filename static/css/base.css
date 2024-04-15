@@ -72,6 +72,14 @@ body {
     background: #000 !important;
 }
 
+
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
+
 /* -------------------------------- Overlay to allow to cover Body picture for user to be able to see content properly on .................. */
 .overlay {
 	height: 100%;
