@@ -43,7 +43,11 @@
                         <h2 class="logo-font text-black my-0"><strong>Build</strong> Alone</h2>
                     </a>
                 </div>
-                <div class="col-12 col-lg-4 my-auto py-1 py-lg-0"></div>
+                <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+                    <a class="logo-font font-weight-bold nav-link text-black mr-5 text-lg-center" href="{% url 'excavator' %}">
+                        Excavators
+                    </a>
+                </div>
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                     <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                         <li class="list-inline-item dropdown">
@@ -72,9 +76,9 @@
                                     <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                     <p class="my-0">
                                         {% if grand_total %}
-                                            ${{ grand_total|floatformat:2 }}
+                                            £{{ grand_total|floatformat:2 }}
                                         {% else %}
-                                            $0.00
+                                            £0.00
                                         {% endif %}
                                     </p>
                                 </div>
