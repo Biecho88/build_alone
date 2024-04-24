@@ -1,5 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from .models import Excavator
+from django.contrib import messages
 
 from .forms import ExcavatorForm
 
@@ -19,7 +20,17 @@ def excavator(request):
 
 def add_excavator(request):
     """ Add a product to the store """
-    form = ExcavatorForm()
+    if request.method == 'POST':
+        form = ExcavatorForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully added excavator!')
+            return redirect(reverse('add_excavator'))
+        else:
+            messages.error(request, 'Failed to add excavator. Please ensure the form is valid.')
+    else:
+        form = ExcavatorForm()
+    
     template = 'excavator/add_excavator.html'
     context = {
         'form': form,
