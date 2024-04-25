@@ -1,8 +1,9 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
-from .models import Excavator
+from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 
 from .forms import ExcavatorForm
+from .models import Excavator
 
 
 def excavator(request):
@@ -17,9 +18,13 @@ def excavator(request):
 
     return render(request, 'excavator/excavator.html', context)
 
-
+@login_required
 def add_excavator(request):
-    """ Add a product to the store """
+    """ Add a excavator to the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     if request.method == 'POST':
         form = ExcavatorForm(request.POST, request.FILES)
         if form.is_valid():
