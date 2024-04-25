@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
+from django.db.models import Q
+from django.db.models.functions import Lower
 
 from .forms import ExcavatorForm
 from .models import Excavator
@@ -30,7 +32,7 @@ def add_excavator(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Successfully added excavator!')
-            return redirect(reverse('add_excavator'))
+            return redirect(reverse('excavator'))
         else:
             messages.error(request, 'Failed to add excavator. Please ensure the form is valid.')
     else:
