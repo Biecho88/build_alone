@@ -292,3 +292,28 @@ input[name='q']::placeholder {
         height: calc(100vh - 116px);
     }
 }
+
+/* Main text on main page */
+@media (max-width: 1472px) {
+    .media_size{
+        font-size: larger;
+    }
+}
+
+@media (max-width: 1024px) {
+    .media_size{
+        font-size: large;
+    }
+}
+
+@media (max-width: 768px) {
+    .media_size{
+        font-size: small;
+    }
+}
+
+@media (max-width: 425px) {
+    .media_size{
+        font-size: x-small;
+    }
+}
