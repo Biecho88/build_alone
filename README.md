@@ -34,33 +34,39 @@ At ExcavateRents, we understand the importance of having the right equipment for
 
   1. As a first time visitor, I want to find the right excavator.
   2. As a first time visitor, I want to quickly check rental availability and pricing.
-  3. As a first time visitor, I want to explore a diverse range of recipes, discover new flavors, and gain inspiration for my culinary adventures in the kitchen.
+  3. As a first time visitor, I want to understand the rental process:.
 
 - #### Returning visitor goals
 
-  1. As a returning visitor, I want to explore new recipes added to the collection or to rediscover old favorites.
-  2. As a returning visitor, I want to continue honing my cooking skills and knowledge.
-  3. As a returning visitor, I want to add, edit or delete my recipes.
+  1. As a returning visitor, I want to check for new inventory or special offers.
+  2. As a returning visitor, I want to review past rental history or account information.
+  3. As a returning visitor, I want to explore additional services or resources.
 
 - #### Frequent User Goals
 
   1. As a frequent user, I want to check if the new features have been added.
-  2. As a frequent user, I want to continuously explore new recipes across various cuisines, dietary preferences, and cooking styles.
-  3. As a frequent user, I want to improve their cooking skills and techniques by experimenting with more advanced recipes, trying out different cooking methods, and mastering challenging culinary tasks.
+  2. As a frequent user, I want to continuously explore new machinery added for rent.
+  3. 
 
 - ## *Design*
 
-- #### Color scheme
+- ### Color scheme
 
-    Website features a striking color scheme designed to create a sleek and cohesive visual experience. The main page boasts a clean white background, evoking a sense of simplicity and clarity, with black text providing clear and legible content. Meanwhile, the header and footer sections command attention with their teal color, which adds a vibrant splash of energy to the overall design. Against these teal backgrounds, white text stands out prominently, ensuring that important navigation elements and essential information are easily accessible and visually engaging. This thoughtful combination of colors creates a modern and sophisticated ambiance, inviting users to explore our website with style and ease
+    #### Background Color: An evening-themed picture from a construction area where heavy machinery is working is creating a dynamic and engaging backdrop for the website. It not only sets the tone for the industry but also adds visual interest and context to the content. With such a background, the dark tones from the evening theme provide a suitable base for the contrast needed to make white containers stand out, ensuring that information and features are easily readable and accessible to visitors. It can also evoke a sense of activity and productivity, which aligns well with the purpose of your website.
+   
+
+    #### Container Color: The containers housing the information and features are white. This creates a clean, crisp look that stands out against the dark background. White containers can also help to ensure that text and images are easily readable and visually distinct.
+
+    #### Text Color: Text within the white containers is black. A classic choice that provides high contrast against the white background.
+
 
 - #### Typography
   
-    Roboto font is the main font used throughout the whole website with sans-serif as the fallback font in case for any reason the font isn't being imported into the site correctly.
+    Lato font is the main font used throughout the whole website with sans-serif as the fallback font in case for any reason the font isn't being imported into the site correctly.
 
 - #### Icons
 
-    Materialize and Font Awesome icons have been used to style the page to boost user experience.
+    Font Awesome icons have been used to style the page to boost user experience.
 
 ## Languages used
 
