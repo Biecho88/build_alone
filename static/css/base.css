@@ -296,19 +296,19 @@ input[name='q']::placeholder {
 /* Main text on main page */
 @media (max-width: 1472px) {
     .media_size{
-        font-size: small;
+        font-size: xx-small;
     }
 }
 
 @media (max-width: 1024px) {
     .media_size{
-        font-size: x-small;
+        font-size: xx-small;
     }
 }
 
 @media (max-width: 768px) {
     .media_size{
-        font-size: x-small;
+        font-size: xx-small;
     }
 }
 
