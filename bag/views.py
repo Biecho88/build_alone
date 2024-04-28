@@ -5,11 +5,11 @@ from excavator.models import Excavator
 
 # Create your views here.
 
+
 def view_bag(request):
     """ A view that renders the bag content page """
 
     return render(request, 'bag/bag.html')
-
 
 
 def add_to_bag(request, item_id):

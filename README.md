@@ -84,18 +84,22 @@ At ExcavateRents, we understand the importance of having the right equipment for
     - GitHub is used to store the project code after being pushed from Git.
 3. [Pixabay](https://pixabay.com/)
     - Pixabay Was used for images.
-4. [Materialize 1.0.0](https://materializecss.com/)
-    - Materialize is used to assist with the responsiveness and styling of the website.
-5. [MongoDB](https://www.mongodb.com/)
-    - Mongo is used to store the data andsearch through the recipes by text.
+4. [Bootstrap 4.4.1](https://getbootstrap.com/)
+    - Bootstrap is used to assist with the responsiveness and styling of the website.
+5. [Elephantsql](https://www.elephantsql.com/)
+    - Elephantsql is used to store the data.
 6. [Heroku](https://dashboard.heroku.com/)
     - Heroku is used for cloud-based hosting platform.
 7. [Font Awesome](https://fontawesome.com/)
     - Font Awesome styling of the website.
+8. [Django](https://www.djangoproject.com/)
+    - Django framework used to manage the build of the project.
+9. [AWS](https://aws.amazon.com/console/)
+    - AWS used to manage files on cloud.
 
 ## Database_schema - for planning purposes before creating website
 
-<h2 align="center"><img src="https://i.ibb.co/N7Kr05n/Database-schema.png"  alt="Database_schema" border="0"></h2>
+<h2 align="center"><img src="#"  alt="Database_schema" border="0"></h2>
 
 ### Relational database explained
 A relational database for web development is a type of database management system (DBMS) that organizes data into tables of rows and columns, with relationships defined between them. Here's a brief overview of its components and how it's used in web development:
@@ -135,14 +139,24 @@ Non-relational databases are often used in web development for their flexibility
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
-- [Home page](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fhealthy-book-piotr-034b028d3ac7.herokuapp.com%2F)
-- [Add Recipe page](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fhealthy-book-piotr-034b028d3ac7.herokuapp.com%2Fget_category)
-- [Recipe page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fhealthy-book-piotr-034b028d3ac7.herokuapp.com%2Fget_recipes)
-- [Login page](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fhealthy-book-piotr-034b028d3ac7.herokuapp.com%2Flog_in)
-- [Register page](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fhealthy-book-piotr-034b028d3ac7.herokuapp.com%2Fregister)
-- [CSS test results by text input](https://jigsaw.w3.org/css-validator/validator)
+- [Home page](#)
+- [Add excavator page](#)
+- [Excavator page](#)
+- [Login page](#)
+- [Bag page](#)
+- [Register page](#)
+- [Checkout page](#)
+- [Checkout_success page](#)
+- [CSS test results for base.css](https://i.ibb.co/sW4mFj6/CSS.png)
+- [CSS test results for checkout.css](https://i.ibb.co/Z1wGZQ7/CSS-v2.png)
+- [JavaScript test results for stripe_elements.js](https://i.ibb.co/xDkSZv0/Java.png)
+    One issue fixed with semicolon missing.
+- [JavaScript test results for code in bag.html](https://i.ibb.co/NrFTf00/Java-v2.png)
+    Issues fixed with two semicolons missing.
 
-<h2 align="center"><img src="https://i.ibb.co/F03r9yM/CSS-check.png"  alt="CSS validation check" border="0"></h2>
+
+
+
 
 - The text was chacked in the free grammar checker](https://www.grammarly.com/spell-checker)
 - The text for website and readme file was partly wrriten by ChatGPT 3.5](https://chat.openai.com/)
@@ -174,15 +188,35 @@ PEP 8 is a style guide for writing Python code. PEP stands for Python Enhancemen
 
 These are just some of the key points from PEP 8. Adhering to these style conventions helps make Python code more readable and maintainable, especially in collaborative projects where consistency is important.
 
-### Carried out automotion testing with PEP8 installed in terminal with command "$ pip install pep8" : 
+### Carried out PEP8 compatibility with CI Python Linter : 
 
-#### PEP8 first scan
+#### All python files in Profiles app:
 
-<h2 align="center"><img src="https://i.ibb.co/4fQfzmy/pep8-first-scan.png" alt="pep8 firsts scan" border="0"></h2>
+Three no empty line on the end of the code removed - fixed
+32: E303 too many blank lines (2) - left in models.py
 
-#### PEP8 second scan
+#### All python files in Home app:
 
-<h2 align="center"><img src="https://i.ibb.co/9HwH4D5/pep8-second-scan.png" alt="pep8 second scan" border="0"></h2>
+Empty line on the end of the code removed - fixed
+Added one empty space before code - fixed
+
+#### All python files in Excavator app:
+
+New line missing - fixed
+Added two empty space before code - fixed
+
+#### All python files in Checkout app:
+
+New lines missing - fixed
+Added empty spaces before code - fixed
+Multiple line to long errors  
+
+#### All python files in Bag app:
+
+New lines missing - fixed
+Added empty spaces before code - fixed
+Multiple line to long errors 
+
 
 ### Carried out manual testing as follows : 
 

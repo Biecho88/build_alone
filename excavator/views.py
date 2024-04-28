@@ -13,12 +13,12 @@ def excavator(request):
 
     excavator = Excavator.objects.all()
 
-
     context = {
         'excavator': excavator,
     }
 
     return render(request, 'excavator/excavator.html', context)
+
 
 @login_required
 def add_excavator(request):
@@ -37,7 +37,7 @@ def add_excavator(request):
             messages.error(request, 'Failed to add excavator. Please ensure the form is valid.')
     else:
         form = ExcavatorForm()
-    
+
     template = 'excavator/add_excavator.html'
     context = {
         'form': form,
