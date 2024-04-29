@@ -216,41 +216,67 @@ These are just some of the key points from PEP 8. Adhering to these style conven
 ### Carried out manual testing as follows : 
 
 #### Homepage
-- Click on logo or Home and verify that home page appears.
-- If visitor is not logged in “Log in” and "Register" should be displayed in the navigation and clicking this link will bring you to the relevant page.
-- If visitor is logged in “Your Profile”, “Add recipe”, “Recipes”, “Log out” should be displayed in the navigation and clicking this link will bring you to the relevant page.
-- Ensure slider displaying correct images.
-- Confirmed that the header links, link to the correct pages
-- Confirmed that the header links, link to the correct pages on smaller devices
-- Confirmed that the social links in the footer open in a new browser window and go to the correct links
+- Click on logo(Build Alone) to verify that home page appears.
+- If visitor is not logged in, “Log in” and "Register" should be displayed in the navigation and clicking this link will bring you to the relevant page.
+- If visitor is logged in, “Your Profile”, “Log out” should be displayed in the navigation and clicking this link will bring you to the relevant page.
+- If Superuser is logged in,“Product Management”, “Your Profile”, “Log out” should be displayed in the navigation and clicking this link will bring you to the relevant page.
+- Confirmed that the header links, link to the correct pages.
+- Confirmed that the header links, link to the correct pages on smaller devices.
+- Confirmed that the social links in the footer open in a new browser window and go to the correct links.
+- Confirmed that the header design changes on mobile devices and functionality and links still works.
 
 #### Register page
-- Confirmed that the form work correctly, and user registration adds details to MongoDB database
-- Confirmed that the register form selector work correctly
+- Confirmed that the form work correctly, and user registration adds details to database.
+- Confirmed that responsivnes of the site on verious devices works properly
+- Confirmed that toas massages display correctly and are relevant to user actions.
 
 
 #### Log in  page
-- Confirmed that the form work correctly, and user session is on
-- Confirmed that the log in form selector work correctly
+- Confirmed that login functionality works correctly and login in as superuser and normal user provides different options in navigation bar.
+- Confirmed that responsivnes of the site on verious devices works properly.
+- Confirmed that toas massages display correctly and are relevant to user actions.
 
-#### Add recipe page
-- Confirmed that the form work correctly, and recipes are added
-- Confirmed that the add recipe form selector work correctly
+#### Add product page
+- Confirmed that the add product form work correctly, and products are added.
+- confirmed this page is only avelilable for superusers. Even if non-superuser uses URL address to get to this site.
+- Confirmed that toas massages display correctly and are relevant to user actions.
 
-#### Edit recipe page
-- Confirmed that the form work correctly, and recipes are eddited
-- Confirmed that the edit form selector work correctly
+#### Excavators page
+- Confirmed that page connects with database and excavators are displayed.
+- Confirmed that quantity of days for rent can be adjusted up or down.
+- Confirmed that quantity of days for rent can not be adjusted less than 1 and minus button disables.
+- Confirmed that Excavators can be added to the bag by using relevant button.
+- Confirmed that home button redirect to home page.
+- Confirmed that toas massages display correctly and are relevant to user actions.
 
-#### Recipe page
-- Confirmed that the website display recipes correctly from the database
-- Confirmed that the "delete" button works correctly
-    - user authorsation is missing as ones clicked recipe is deleted
-- Confirmed that the "edit" button works correctly
-- Confirmed that the user can only delete or edit recipes added by him/her
-- Confirmed that the "search" button works correctly. Search is performed by text on "list of ingridiens" and "recipe name"
+#### Bag page
+- Confirmed that page connects with database and order is processed further.
+- Confirmed that quantity of days for rent can be adjusted up or down.
+- Confirmed that quantity of days for rent can be updated.
+- Confirmed that product can be deleted fro checkout page.
+- Confirmed that quantity of days for rent can not be adjusted less than 1 and minus button disables.
+- Confirmed that totals and subtotals are calculated correctly.
+- Confirmed that order is created once secure checkout button is clicked.
+- Confirmed that home button redirect to product page.
+- Confirmed that toas massages display correctly and are relevant to user actions.
+
+#### Checkout page
+- Confirmed that page connects with database and order is processed further.
+- Confirmed that personal, payment and delivery details form works correctly.
+- Confirmed that bag informations are displayed correctly as per user requuest.
+- Confirmed that order is confirmed once complete order button is clicked.
+- Confirmed that payment is recorded correctly in Stripe.
+- Confirmed that bag button redirect to bag page.
+- Confirmed that toas massages display correctly and are relevant to user actions.
 
 #### Footer
 - Confirmed that the footer links, link to the correct pages
+
+#### External management systems
+- Confirmed that AWS records and store static files correctly.
+- Confirmed that Stripe process payments correctly.
+- Confirmed that ElephantSQL records database correctly.
+- Confirmed that Heroku hosts website that matched development version.
 
 ### Further testing
 
