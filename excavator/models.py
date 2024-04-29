@@ -5,7 +5,7 @@ class Excavator(models.Model):
 
     name = models.CharField(max_length=254)
     model = models.CharField(max_length=254)
-    production_year = models.IntegerField()
+    production_year = models.IntegerField(max_digits=4)
     weight = models.DecimalField(max_digits=6, decimal_places=2)
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
