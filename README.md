@@ -46,7 +46,7 @@ At ExcavateRents, we understand the importance of having the right equipment for
 
   1. As a frequent user, I want to check if the new features have been added.
   2. As a frequent user, I want to continuously explore new machinery added for rent.
-  3. 
+  3. As a frequent user, I want complete more "projects" with Build Alone rental help.
 
 - ## *Design*
 
@@ -97,43 +97,38 @@ At ExcavateRents, we understand the importance of having the right equipment for
 9. [AWS](https://aws.amazon.com/console/)
     - AWS used to manage files on cloud.
 
+## Django Framework explained:
+
+#### Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Its primary purpose is to simplify the creation of complex, database-driven websites by providing a robust set of tools and conventions for handling common web development tasks.
+
+#### Here are some of the key purposes and capabilities of the Django framework:
+
+    1. Rapid Development: Django follows the "Don't Repeat Yourself" (DRY) principle, which means developers can write clean, concise code without redundancy. Its built-in features, such as an ORM (Object-Relational Mapper) and automatic admin interface, help developers build applications quickly.
+
+    2. Scalability: Django is designed to scale efficiently, making it suitable for projects of all sizes. Its modular structure and support for reusable apps allow developers to build and maintain large-scale applications with ease.
+
+    3. ORM (Object-Relational Mapper): Django's ORM allows developers to interact with the database using Python objects, abstracting away the complexity of SQL queries. This makes database operations more intuitive and reduces the risk of SQL injection attacks.
+
+    4. Admin Interface: Django provides an automatic admin interface for managing site content, which is generated based on the data models defined in the application. This allows developers to quickly create a fully-featured administrative interface without writing any code.
+
+    5. Security: Django comes with built-in security features to help developers build secure web applications. It provides protection against common web security threats such as SQL injection, cross-site scripting (XSS), cross-site request forgery (CSRF), and clickjacking.
+
+    6. URL Routing: Django's URL routing system allows developers to map URLs to views, making it easy to create clean and readable URL structures for their applications.
+    
+    7. Template Engine: Django includes a powerful template engine that allows developers to build dynamic web pages using HTML templates with Python-like syntax. This separation of logic and presentation helps maintain clean and maintainable code.
+
+    8. Community and Ecosystem: Django has a large and active community of developers who contribute to its ecosystem by creating reusable apps, extensions, and libraries. This makes it easy for developers to find solutions to common problems and leverage existing code.
+
+#### Overall, Django is well-suited for building a wide range of web applications, from simple blogs to complex enterprise-level systems, thanks to its simplicity, flexibility, and scalability.
+
 ## Database_schema - for planning purposes before creating website
 
-<h2 align="center"><img src="#"  alt="Database_schema" border="0"></h2>
+[Database Schema Link](https://drawsql.app/teams/piotr-bieszczad/diagrams/build-alone/)
 
-### Relational database explained
-A relational database for web development is a type of database management system (DBMS) that organizes data into tables of rows and columns, with relationships defined between them. Here's a brief overview of its components and how it's used in web development:
+<h2 align="center"><img src="https://i.ibb.co/JcKjzxD/Database-Schema.png" alt="Database_schema" border="0"></h2>
 
-- Tables: Data is stored in tables, where each table represents a specific entity or concept (e.g., users, products, orders). Each row in a table represents a single record or instance of that entity, and each column represents a specific attribute or field of that entity.
+### Database_Schema ecplained
 
-- Primary Keys: Each table typically has a primary key, which uniquely identifies each row within the table. This ensures that each record is uniquely identifiable and facilitates relationships between tables.
-
-- Relationships: Relationships between tables are established using foreign keys. A foreign key in one table refers to the primary key in another table, creating a link between the two tables. Common types of relationships include one-to-one, one-to-many, and many-to-many.
-
-- Normalization: Relational databases are often normalized to minimize redundancy and improve data integrity. Normalization involves organizing data into multiple tables and eliminating redundant information.
-
-- Structured Query Language (SQL): SQL is used to interact with relational databases. It provides a standardized language for querying, updating, and managing data in the database. Common SQL commands include SELECT, INSERT, UPDATE, DELETE, and JOIN.
-
-- ACID Properties: Relational databases ensure data consistency and integrity by adhering to ACID properties: Atomicity, Consistency, Isolation, and Durability. These properties guarantee that database transactions are processed reliably and securely.
-
-In web development, relational databases are commonly used as the backend data storage solution for web applications. They allow developers to store and retrieve data efficiently, support complex queries, and enforce data integrity constraints. Frameworks and libraries such as Django (Python), Ruby on Rails (Ruby), and Laravel (PHP) provide built-in support for relational databases, making it easy to integrate them into web applications.
-
-### Non-Relational database explained
-A non-relational database, also known as NoSQL (Not Only SQL), is a type of database management system that stores and retrieves data in a format other than the tabular relations used in relational databases. Here's a brief overview of non-relational databases and their use in web development:
-
-- Document Stores: One common type of non-relational database is the document store, which stores data in flexible, schema-less documents, typically using formats like JSON or BSON. Each document can have its own structure, and related data can be nested within documents.
-
-- Key-Value Stores: Key-value stores are simple databases that store data as a collection of key-value pairs. They are highly efficient for simple data retrieval but may not support complex queries or relationships between data.
-
-- Wide-Column Stores: Wide-column stores organize data into columns rather than rows, allowing for efficient retrieval of large datasets with varying schemas. They are well-suited for storing and analyzing big data.
-
-- Graph Databases: Graph databases represent data as nodes, edges, and properties, making them ideal for storing and querying complex relationships between data entities. They excel at handling interconnected data, such as social networks or recommendation systems.
-
-- In-Memory Databases: In-memory databases store data in system memory rather than on disk, resulting in faster read and write operations. They are commonly used for caching frequently accessed data and improving application performance.
-
-- Distributed Databases: Distributed databases distribute data across multiple nodes or servers, providing scalability and fault tolerance. They are designed to handle large volumes of data and high levels of concurrency, making them suitable for web applications with high traffic and data storage requirements.
-
-Non-relational databases are often used in web development for their flexibility, scalability, and performance advantages, especially in applications with rapidly changing requirements or large volumes of unstructured data. Popular examples of non-relational databases include MongoDB, Redis, Cassandra, and Neo4j. These databases offer a wide range of features and capabilities to meet the diverse needs of modern web applications.
 
 ## My Testing
 
@@ -192,30 +187,30 @@ These are just some of the key points from PEP 8. Adhering to these style conven
 
 #### All python files in Profiles app:
 
-Three no empty line on the end of the code removed - fixed
-32: E303 too many blank lines (2) - left in models.py
+- Three no empty line on the end of the code removed - fixed
+- 32: E303 too many blank lines (2) - left in models.py
 
 #### All python files in Home app:
 
-Empty line on the end of the code removed - fixed
-Added one empty space before code - fixed
+- Empty line on the end of the code removed - fixed
+- Added one empty space before code - fixed
 
 #### All python files in Excavator app:
 
-New line missing - fixed
-Added two empty space before code - fixed
+- New line missing - fixed
+- Added two empty space before code - fixed
 
 #### All python files in Checkout app:
 
-New lines missing - fixed
-Added empty spaces before code - fixed
-Multiple line to long errors  
+- New lines missing - fixed
+- Added empty spaces before code - fixed
+- Multiple line to long errors  
 
 #### All python files in Bag app:
 
-New lines missing - fixed
-Added empty spaces before code - fixed
-Multiple line to long errors 
+- New lines missing - fixed
+- Added empty spaces before code - fixed
+- Multiple line to long errors 
 
 
 ### Carried out manual testing as follows : 
