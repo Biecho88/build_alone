@@ -185,10 +185,14 @@ These are just some of the key points from PEP 8. Adhering to these style conven
 
 ### Carried out PEP8 compatibility with CI Python Linter : 
 
+#### All python files in build_alone project:
+
+- Three no empty line on the end of the code removed - fixed
+
+
 #### All python files in Profiles app:
 
 - Three no empty line on the end of the code removed - fixed
-- 32: E303 too many blank lines (2) - left in models.py
 
 #### All python files in Home app:
 
@@ -204,14 +208,11 @@ These are just some of the key points from PEP 8. Adhering to these style conven
 
 - New lines missing - fixed
 - Added empty spaces before code - fixed
-- Multiple line to long errors  
 
 #### All python files in Bag app:
 
 - New lines missing - fixed
 - Added empty spaces before code - fixed
-- Multiple line to long errors 
-
 
 ### Carried out manual testing as follows : 
 
@@ -289,21 +290,21 @@ These are just some of the key points from PEP 8. Adhering to these style conven
 
 #### Tested if registration of the new user works correctly
 
-<h2 align="center"><img src="https://i.ibb.co/SQmjf4F/Registration.png" alt="Registration succesfull" border="0"></h2>
+<h2 align="center"><img src="https://i.ibb.co/gWGnb1W/login.png" alt="Registration succesfull" border="0"></h2>
 
 #### Tested if log in of created user works correctly
 
-<h2 align="center"><img src="https://i.ibb.co/RS2Dbjn/Login.png" alt="Log in test" border="0"></h2>
+<h2 align="center"><img src="https://i.ibb.co/gWGnb1W/login.png" alt="Log in test" border="0"></h2>
 
 #### Tested if log out of loged in user works correctly
 
-<h2 align="center"><img src="https://i.ibb.co/8KbS3sw/Logout.png" alt="Log out test" border="0"></h2>
+<h2 align="center"><img src="https://i.ibb.co/hBX1sDt/logout.png" alt="Log out test" border="0"></h2>
 
-#### Tested if adding recipe to the database works correctly
+#### Tested if regular user can access pages stricted only for superusers by coping URL.
 
-<h2 align="center"><img src="https://i.ibb.co/SV4gWTK/Add-recipe-test.png" alt="Add recipe" border="0"></h2>
+<h2 align="center"><img src="https://i.ibb.co/252mT3m/No-access.png" alt="Add recipe" border="0"></h2>
 
-#### Tested if editing recipe works correctly
+#### Tested if Adding Product works correctly
 
 <h2 align="center"><img src="https://i.ibb.co/27d3d2x/Edit-recipe.png" alt="Edit recipe" border="0"></h2>
 
