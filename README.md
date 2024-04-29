@@ -304,17 +304,18 @@ These are just some of the key points from PEP 8. Adhering to these style conven
 
 <h2 align="center"><img src="https://i.ibb.co/252mT3m/No-access.png" alt="Add recipe" border="0"></h2>
 
-#### Tested if Adding Product works correctly
+#### Tested if user can update his profile and entry from database
 
-<h2 align="center"><img src="https://i.ibb.co/27d3d2x/Edit-recipe.png" alt="Edit recipe" border="0"></h2>
+<h2 align="center"><img src="https://i.ibb.co/JsvWK47/profile-update.png" alt="Edit recipe" border="0"></h2>
+<h2 align="center"><img src="https://i.ibb.co/QDfCxVh/database-profile-entry.png" alt="Edit recipe" border="0"></h2>
 
-#### Tested if deleting recipe works correctly
+#### Tested if form validation works correctly for edyting profile informations
 
-<h2 align="center"><img src="https://i.ibb.co/VgKzYWC/Delete-recipe.png" alt="Delete recipe" border="0"></h2>
+<h2 align="center"><img src="https://i.ibb.co/wLDMzhj/Validation-of-editing.png" alt="Delete recipe" border="0"></h2>
 
-#### Check if patterns of the forms works corectly
+#### Check if Excavators are adding correctly
 
-<h2 align="center"><img src="https://i.ibb.co/bBvqj5h/Check-if-patterns-are-working.png" alt="Pattern check" border="0"></h2>
+<h2 align="center"><img src="https://i.ibb.co/qs7NV1p/adding-product.png" alt="Pattern check" border="0"></h2>
 
 #### Second check if patters on forms works correctly
 
