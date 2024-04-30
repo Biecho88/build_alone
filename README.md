@@ -6,7 +6,7 @@
 
 # Welcome to our Build Alone Website!
 
-#### Welcome to ExcavateRents, your premier destination for hassle-free construction machinery rentals, specializing in excavators. Whether you're a seasoned contractor or a DIY enthusiast tackling a home project, we've got you covered with a vast selection of top-quality excavators available for rent at competitive rates.
+#### Welcome to ExcavateRents, your premier destination for hassle-free construction machinery rentals, specializing in excavators. Whether you're a seasoned contractor or a do-it-yourself enthusiast tackling a home project, we've got you covered with a vast selection of top-quality excavators available for rent at competitive rates.
 
 At ExcavateRents, we understand the importance of having the right equipment for the job, which is why we focus primarily on providing a diverse range of excavators tailored to meet your specific needs. From compact mini excavators perfect for tight spaces to heavy-duty models designed for large-scale projects, our inventory has something for every requirement.
 
@@ -342,17 +342,43 @@ Deployment and source control was carried out via GitHub and Heroku. The reposit
 1. Database schema was created
     - DrawSQL was used to properly design schema.
 2. Project workspace was created in GitHub.
-3. 
-4. 
-5. 
-6. 
-7. 
-8. Add DB connection code to run.py 
-9. Test connection to DB again to confirm it's working
-10. Connect GitHub repository to Heroku using code provided by heroku and github
-11. Continue to create app and regular commits
-12. Set Debug to False
-13. Connect GitHub repository to Heroku using code provided by heroku and github
+3. Project build - history of it can be check in respository regular commits
+4. Stripe account created and connected to handle payments
+5. Project connected with Heroku hosting platform.
+    - Account already existed
+    - Created new  app
+    - Connected Database URL using -> DATABASE_URL
+    - Unicorn installed in repository
+    - Procfile created and Heroku connected web dyno using Unicorn - > SECRET_KEY
+    - Temporary disabled static files
+    - Connected with AWS using -> AWS_ACCESS_KEY_ID / AWS_SECRET_ACCESS_KEY
+        - Required to instal boto and django-storages in virtual enviroment
+    - Remove disable static files and test if Heroku comunicates with AWS
+    - Connected with Stripe using -> STRIPE_PUBLIC_KEY / STRIPE_SECRET_KEY /  STRIPE_WH_SECRET
+6. Project connected to the database ElephantSQL
+    - Account created
+    - Intanse created in Tiny turtle free plan
+    - URL connected with Heroku
+    - Installed dj_database_url and psycopg2
+    - Connected with repository through database URL
+    - Checked if database is connected and data is storred correctly
+7. Static files stored in AWS
+    - Account created
+    - Bucket created using S3 service 
+    - Changed bucket settings
+        - Static website hosting -> on
+        - Create Security Policy
+        - Permission changed to public access
+    - Amazon Identity and Access Management
+        - Created policy to give access to S3 bucket
+        - User created
+        - Access given to what is within Bucket
+8. AWS conneted with project
+9. Continue to Project build - history of it can be check in respository regular commits
+11. Project readme build - history of it can be check in respository regular commits
+12. Debug set to False
+13. Website checked if matching development version
+ 
 
 ### Making a Local Clone
 
