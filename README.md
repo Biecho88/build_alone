@@ -127,21 +127,20 @@ At ExcavateRents, we understand the importance of having the right equipment for
 
 <h2 align="center"><img src="https://i.ibb.co/JcKjzxD/Database-Schema.png" alt="Database_schema" border="0"></h2>
 
-### Database_Schema ecplained
-
 
 ## My Testing
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
-- [Home page](#)
-- [Add excavator page](#)
-- [Excavator page](#)
-- [Login page](#)
-- [Bag page](#)
-- [Register page](#)
-- [Checkout page](#)
-- [Checkout_success page](#)
+- [Home page](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fbuild-alone-782f5267ecce.herokuapp.com%2F)
+- [Add excavator page](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fbuild-alone-782f5267ecce.herokuapp.com%2Fexcavator%2Fadd%2F)
+- [Excavator page](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fbuild-alone-782f5267ecce.herokuapp.com%2Fexcavator%2F)
+- [Login page](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fbuild-alone-782f5267ecce.herokuapp.com%2Faccounts%2Flogin%2F)
+- [Bag page](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fbuild-alone-782f5267ecce.herokuapp.com%2Fbag%2F)
+- [Profile page](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fbuild-alone-782f5267ecce.herokuapp.com%2Fprofile%2F)
+- [Register page](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fbuild-alone-782f5267ecce.herokuapp.com%2Faccounts%2Fsignup%2F)
+- [Checkout page](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fbuild-alone-782f5267ecce.herokuapp.com%2Fbag%2F)
+- [Checkout_success page](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fbuild-alone-782f5267ecce.herokuapp.com%2Fcheckout%2Fcheckout_success%2F9DDCFA7DB1194F728624240DC10E6730)
 - [CSS test results for base.css](https://i.ibb.co/sW4mFj6/CSS.png)
 - [CSS test results for checkout.css](https://i.ibb.co/Z1wGZQ7/CSS-v2.png)
 - [JavaScript test results for stripe_elements.js](https://i.ibb.co/xDkSZv0/Java.png)
@@ -228,7 +227,13 @@ These are just some of the key points from PEP 8. Adhering to these style conven
 
 #### Register page
 - Confirmed that the form work correctly, and user registration adds details to database.
-- Confirmed that responsivnes of the site on verious devices works properly
+- Confirmed that responsivnes of the site on verious devices works properly.
+- Confirmed that toas massages display correctly and are relevant to user actions.
+
+#### Profile page
+- Confirmed that the form and form validation works correctly.
+- Confirmed that the edited form is saved in database.
+- Confirmed that responsivnes of the site on verious devices works properly.
 - Confirmed that toas massages display correctly and are relevant to user actions.
 
 
@@ -302,40 +307,46 @@ These are just some of the key points from PEP 8. Adhering to these style conven
 
 #### Tested if regular user can access pages stricted only for superusers by coping URL.
 
-<h2 align="center"><img src="https://i.ibb.co/252mT3m/No-access.png" alt="Add recipe" border="0"></h2>
+<h2 align="center"><img src="https://i.ibb.co/252mT3m/No-access.png" alt="access restricted" border="0"></h2>
 
 #### Tested if user can update his profile and entry from database
 
-<h2 align="center"><img src="https://i.ibb.co/JsvWK47/profile-update.png" alt="Edit recipe" border="0"></h2>
-<h2 align="center"><img src="https://i.ibb.co/QDfCxVh/database-profile-entry.png" alt="Edit recipe" border="0"></h2>
+<h2 align="center"><img src="https://i.ibb.co/JsvWK47/profile-update.png" alt="profile update" border="0"></h2>
+<h2 align="center"><img src="https://i.ibb.co/QDfCxVh/database-profile-entry.png" alt="database entry" border="0"></h2>
 
 #### Tested if form validation works correctly for edyting profile informations
 
-<h2 align="center"><img src="https://i.ibb.co/wLDMzhj/Validation-of-editing.png" alt="Delete recipe" border="0"></h2>
+<h2 align="center"><img src="https://i.ibb.co/wLDMzhj/Validation-of-editing.png" alt="form validation - profile" border="0"></h2>
 
 #### Check if Excavators are adding correctly
 
-<h2 align="center"><img src="https://i.ibb.co/qs7NV1p/adding-product.png" alt="Pattern check" border="0"></h2>
+<h2 align="center"><img src="https://i.ibb.co/qs7NV1p/adding-product.png" alt="adding excavators" border="0"></h2>
 
-#### Second check if patters on forms works correctly
+#### Check if Excavators are adding correctly, required fields empty
 
-<h2 align="center"><img src="https://i.ibb.co/xq0hWxT/Check-if-patterns-are-working-v2.png" alt="Second pattern check" border="0"></h2>
+<h2 align="center"><img src="" alt="Required field validation" border="0"></h2>
+
+#### Check if quantity updates in bag
+
+<h2 align="center"><img src="https://i.ibb.co/DGp8PwZ/Updating-quantity-in-bag.png" alt="quantity update" border="0"></h2>
 
 ### Known Bugs
 
-- None
+- The billing information on checkout_success.html is not correctly calculating totals. This calculation was working in the virtual environment but ceased functioning once the app was deployed to Heroku. The reason for this issue is unknown. Additionally, the display of this information on the profile page, where historical orders of the user are listed, is also incorrect.
+
 
 ## Deployment
 
-Deployment and source control was carried out via GitHub and Heroku. The repository location is as follows:https://github.com/Biecho88/healthy_book
+Deployment and source control was carried out via GitHub and Heroku. The repository location is as follows:https://github.com/Biecho88/build_alone
 
-1. Database and Tables were created in an Atlas MongoDB account
-2. Project workspace was created in GitHub. In this workspace: Flask was installed  - It was moved to GitPod but still linked to GitHub.
-3. Setup run.py file and imported flask and os
-4. Create a new Heroku App - unique name and EU Server
-5. Login to Heroku to add config variables including IP, Port, Mongo_DB and Mongo_URI
-6. Get Flask to talk to MongoDB
-7. Add extra libraries to run.py
+1. Database schema was created
+    - DrawSQL was used to properly design schema.
+2. Project workspace was created in GitHub.
+3. 
+4. 
+5. 
+6. 
+7. 
 8. Add DB connection code to run.py 
 9. Test connection to DB again to confirm it's working
 10. Connect GitHub repository to Heroku using code provided by heroku and github
