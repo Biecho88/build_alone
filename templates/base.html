@@ -12,7 +12,7 @@
 
         {% block extra_meta %}
         {% endblock %}
-
+         <!-- Bootstrap CSS -->
         {% block corecss %}
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
@@ -22,7 +22,7 @@
 
         {% block extra_css %}
         {% endblock %}
-
+         <!-- JavaScript jQuery, Popper, Bootstrap JS -->
         {% block corejs %}
             <script src="https://kit.fontawesome.com/315b3dae19.js" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
@@ -39,6 +39,7 @@
 </head>  
 
     <body>
+         <!-- Header section with Logo and Navigation -->
         <header class="container-fluid fixed-top">
             <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
@@ -46,6 +47,7 @@
                         <h2 class="logo-font text-black my-0"><strong>Build</strong> Alone</h2>
                     </a>
                 </div>
+                 <!-- Header section with Excavators -->
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                     <a class="logo-font font-weight-bold nav-link text-black mr-5 text-lg-center" href="{% url 'excavator' %}">
                         Excavators
@@ -53,6 +55,7 @@
                 </div>
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                     <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+                        <!-- Authentication-related links -->
                         <li class="list-inline-item dropdown">
                             <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div class="text-center">
@@ -73,6 +76,7 @@
                                 {% endif %}
                             </div>
                         </li>
+                        <!-- Bag / Checkout related links -->
                         <li class="list-inline-item">
                             <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
                                 <div class="text-center">
@@ -90,6 +94,7 @@
                     </ul>
                 </div>
             </div>
+            <!-- Navbar toogler -->
             <div class="row bg-white">
                 <nav class="navbar navbar-expand-lg navbar-light w-100">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -99,13 +104,14 @@
                 </nav>
                 {% include 'includes/main-nav.html' %}
             </div>
+            <!-- Information banner -->
             <div id="rent-banner" class="row text-center">
                 <div class="col bg-black text-white">
                     <h4 class="logo-font my-1">Free delivery on orders over £{{ free_delivery_threshold }}!</h4>                
                 </div>            
             </div>
         </header>
-    
+        <!-- Toast massages -->
         {% if messages %}
             <div class="message-container">
                 {% for message in messages %}
@@ -129,7 +135,7 @@
     
         {% block content %}
         {% endblock %}
-    
+        <!-- Toast massages -->
         {% block postloadjs %}
             <script>
                 $('.toast').toast('show');

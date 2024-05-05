@@ -324,7 +324,7 @@ These are just some of the key points from PEP 8. Adhering to these style conven
 
 #### Check if Excavators are adding correctly, required fields empty
 
-<h2 align="center"><img src="" alt="Required field validation" border="0"></h2>
+<h2 align="center"><img src="https://i.ibb.co/wg64Kwh/r-EQUIRED-FIELD.png" alt="Required field validation" border="0"></h2>
 
 #### Check if quantity updates in bag
 
