@@ -318,7 +318,7 @@ These are just some of the key points from PEP 8. Adhering to these style conven
 
 <h2 align="center"><img src="https://i.ibb.co/wLDMzhj/Validation-of-editing.png" alt="form validation - profile" border="0"></h2>
 
-#### Check if Excavators are adding correctly
+#### Check if Excavators are adding to the bag correctly
 
 <h2 align="center"><img src="https://i.ibb.co/qs7NV1p/adding-product.png" alt="adding excavators" border="0"></h2>
 
@@ -338,9 +338,33 @@ These are just some of the key points from PEP 8. Adhering to these style conven
 
 <h2 align="center"><img src="https://i.ibb.co/sQ0S6Cz/Order-processed.png" alt="quantity update" border="0"></h2>
 
-<h2 align="center"><img src="https://i.ibb.co/x1Sm2fs/Notification.png" alt="quantity update" border="0"></h2>
+<h2 align="center"><img src="https://i.ibb.co/fns7qfL/Notification-v2.png" alt="quantity update" border="0"></h2>
 
-<h2 align="center"><img src="https://i.ibb.co/2y2n9Bq/Delete-from-bag.png" alt="quantity update" border="0"></h2>
+<h2 align="center"><img src="https://i.ibb.co/vVPBcDC/Payment.png" alt="quantity update" border="0"></h2>
+
+<h2 align="center"><img src="https://i.ibb.co/yW12sMy/Payment-v2.png" alt="quantity update" border="0"></h2>
+
+#### Checking history order details
+
+<h2 align="center"><img src="https://i.ibb.co/zm2wFGy/History-order.png" alt="quantity update" border="0"></h2>
+
+#### Website responsivnes
+
+<h2 align="center"><img src="https://i.ibb.co/y5vjPPk/responsivnes.png" alt="quantity update" border="0"></h2>
+
+<h2 align="center"><img src="https://i.ibb.co/9YYDvVF/responsivnes-v2.png" alt="quantity update" border="0"></h2>
+
+<h2 align="center"><img src="https://i.ibb.co/c1PP7fY/responsivnes-v3.png" alt="quantity update" border="0"></h2>
+
+<h2 align="center"><img src="https://i.ibb.co/Mf3B4mX/responsivnes-v4.png" alt="quantity update" border="0"></h2>
+
+<h2 align="center"><img src="https://i.ibb.co/8sbJB6P/responsivnes-v5.png" alt="quantity update" border="0"></h2>
+
+<h2 align="center"><img src="https://i.ibb.co/wSDLn7X/responsivnes-v6.png" alt="quantity update" border="0"></h2>
+
+<h2 align="center"><img src="https://i.ibb.co/gm0zvsz/responsivnes-v8.png" alt="quantity update" border="0"></h2>
+
+<h2 align="center"><img src="#" alt="quantity update" border="0"></h2>
 
 
 ### Known Bugs
