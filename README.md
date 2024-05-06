@@ -2,7 +2,7 @@
 
 [View the live project here.](https://build-alone-782f5267ecce.herokuapp.com/)
 
-<h2 align="center"><img src="https://i.ibb.co/7n9G9Zx/Main-page.png"  alt="Database_schema" border="0"></h2>
+<h2 align="center"><img src="https://i.ibb.co/S6nFnKJ/Main-page.png" alt="Database_schema" border="0"></h2>
 
 # Welcome to our Build Alone Website!
 
@@ -322,13 +322,26 @@ These are just some of the key points from PEP 8. Adhering to these style conven
 
 <h2 align="center"><img src="https://i.ibb.co/qs7NV1p/adding-product.png" alt="adding excavators" border="0"></h2>
 
-#### Check if Excavators are adding correctly, required fields empty
+#### Check if Excavators are adding correctly, validation of required fields
 
 <h2 align="center"><img src="https://i.ibb.co/wg64Kwh/r-EQUIRED-FIELD.png" alt="Required field validation" border="0"></h2>
 
 #### Check if quantity updates in bag
 
 <h2 align="center"><img src="https://i.ibb.co/DGp8PwZ/Updating-quantity-in-bag.png" alt="quantity update" border="0"></h2>
+
+#### Check if user can delete item from the bag
+
+<h2 align="center"><img src="https://i.ibb.co/2y2n9Bq/Delete-from-bag.png" alt="quantity update" border="0"></h2>
+
+#### Check if order is processed, user informed of the order status and stripe record of purchase
+
+<h2 align="center"><img src="https://i.ibb.co/sQ0S6Cz/Order-processed.png" alt="quantity update" border="0"></h2>
+
+<h2 align="center"><img src="https://i.ibb.co/x1Sm2fs/Notification.png" alt="quantity update" border="0"></h2>
+
+<h2 align="center"><img src="https://i.ibb.co/2y2n9Bq/Delete-from-bag.png" alt="quantity update" border="0"></h2>
+
 
 ### Known Bugs
 
@@ -406,7 +419,6 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures of some of the buttons and more detailed explanations of the above process.
 
-## Credits
 
 ### Content
 
