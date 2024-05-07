@@ -312,6 +312,7 @@ These are just some of the key points from PEP 8. Adhering to these style conven
 #### Tested if user can update his profile and entry from database
 
 <h2 align="center"><img src="https://i.ibb.co/JsvWK47/profile-update.png" alt="profile update" border="0"></h2>
+
 <h2 align="center"><img src="https://i.ibb.co/QDfCxVh/database-profile-entry.png" alt="database entry" border="0"></h2>
 
 #### Tested if form validation works correctly for edyting profile informations
@@ -364,12 +365,19 @@ These are just some of the key points from PEP 8. Adhering to these style conven
 
 <h2 align="center"><img src="https://i.ibb.co/gm0zvsz/responsivnes-v8.png" alt="quantity update" border="0"></h2>
 
-<h2 align="center"><img src="#" alt="quantity update" border="0"></h2>
+
 
 
 ### Known Bugs
 
 - The billing information on checkout_success.html is not correctly calculating totals. This calculation was working in the virtual environment but ceased functioning once the app was deployed to Heroku. The reason for this issue is unknown. Additionally, the display of this information on the profile page, where historical orders of the user are listed, is also incorrect.
+
+    This is now fixed by adding deployment var to the Heroku settings, reinstalling requiraments or updating python version.
+
+<h2 align="center"><img src="https://i.ibb.co/T17JpB3/bug-fix.png" alt="quantity update" border="0"></h2>
+
+<h2 align="center"><img src="https://i.ibb.co/tM7CYyt/bug-fix-v2.png" alt="quantity update" border="0"></h2>
+
 
 
 ## Deployment

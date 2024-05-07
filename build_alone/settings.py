@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['8000-biecho88-buildalone-tn4emf53brr.ws-eu110.gitpod.io', 'build-alone-782f5267ecce.herokuapp.com']
+ALLOWED_HOSTS = ['8000-biecho88-buildalone-tn4emf53brr.ws-eu111.gitpod.io', 'build-alone-782f5267ecce.herokuapp.com']
 
 
 # Application definition
